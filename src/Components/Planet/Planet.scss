@@ -1,0 +1,33 @@
+.cardplanet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://user-images.githubusercontent.com/78994881/224758327-14095ab7-5b8d-487b-9408-5499edd30102.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    .card__title{
+        font-size: 2rem;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+    } 
+    .card__content{
+        width: 250px;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 5px 0;
+        background-color: hsla(0, 0%, 100%, 0.8);
+    }  
+    .card__content:hover{
+        background-color: hsla(0, 0%, 100%, );
+        
+    }
+}

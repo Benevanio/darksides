@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Navbar from '../Navbar/Navbar';
+import './Planet.scss'
 const Planet = () => {
     const [planets, setPlanets] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -19,10 +20,10 @@ const Planet = () => {
     return (
         <>
             <Navbar />
-            <div className="planet">
-                <h1>Planet</h1>
+            <div className="cardplanet">
+                <h1 className="card__title">Planet</h1>
                 {planets.map((planet) => (
-                    <div key={planet.name}>
+                    <div key={planet.name}  className="card__content">
                         <h2>{planet.name}</h2>
                         <p>Climate: {planet.climate}</p>
                         <p>Population: {planet.population}</p>
