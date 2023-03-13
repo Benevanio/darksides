@@ -53,30 +53,35 @@
         font-weight: 400;
         margin: 0 10px;
     }
+    .links__cardLeft a:hover{
+        color: #7eff06;
+    }
+    .links__CardRight a:hover{
+        color: #7eff06;
+    }
     .links__cardLeft a::after{
         content: '';
         display: block;
         width: 0;
         height: 2px;
-        background: #fffefe;
+        background: #f50057;
         transition: width .3s;
-        width: 150px;
     }
     .links__CardRight a::after{
         content: '';
         display: block;
         width: 0;
         height: 2px;
-        background: #fffefe;
+        background: #f50057;
         transition: width .3s;
-        width: 150px;
     }
     .links__cardLeft a:hover::after{
         width: 100%;
-        transition: width .3s;
+        height: 15px;
     }
     .links__CardRight a:hover::after{
         width: 100%;
-        transition: width .3s;
+        height: 15px;
     }
+   
 }
