@@ -1,0 +1,59 @@
+.navbar {
+    background: rgb(7, 7, 7);
+    background: linear-gradient(90deg, rgba(7, 7, 7, 1) 0%, rgba(0, 0, 0, 1) 100%
+    );
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("https://user-images.githubusercontent.com/78994881/224758327-14095ab7-5b8d-487b-9408-5499edd30102.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+
+    li {
+        list-style: none;
+    }
+
+    .title {
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .nav__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav__link {
+            font-size: 20px;
+            font-weight: 400;
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .nav__link a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .nav__link a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #fff;
+            transition: width .3s;
+        }
+
+        .nav__link a:hover::after {
+            width: 100%;
+            transition: width .3s;
+        }
+    }
+}
