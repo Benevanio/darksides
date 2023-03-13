@@ -12,6 +12,11 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     
 
     li {
@@ -40,6 +45,7 @@
         .nav__link a {
             text-decoration: none;
             color: #fff;
+            text-transform: uppercase;
         }
 
         .nav__link a::after {
@@ -57,3 +63,17 @@
         }
     }
 }
+@media screen and (max-width: 768px) {
+    .navbar {
+        
+        .nav__link {
+            font-size: 20px;
+            font-weight: 400;
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    }
+    
+}
+    

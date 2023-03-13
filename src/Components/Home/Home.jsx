@@ -7,13 +7,13 @@ const Home = () => {
         <>
             <Navbar />
             <div className="home">
-                <h1 className="title">Star Wars</h1>
+                <h1 className="title">Star <span className="title__span">Wars</span></h1>
 
-                <div className="links__Left">
+                <div className="links__cardLeft">
                     <Link to="/people">People</Link>
 
                 </div>
-                <div className="links__Right">
+                <div className="links__CardRight">
                     <Link to="/planet">Planet</Link>
                 </div>
             </div>
